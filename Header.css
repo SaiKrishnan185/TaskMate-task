@@ -1,0 +1,84 @@
+.header{
+    min-height: 8vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display:grid ;
+    grid-template-columns: 1fr 5fr;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(218, 216, 216, 0.274);
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: left;
+    margin-left: 1vw;
+}
+
+.themeSelector{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+    margin-right: 1vw;
+    min-width: 5vw;
+    min-height: 5vh;
+    padding-bottom: 0;
+}
+
+.themeSelector span{
+    
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 1vh;
+    border: 1px solid rgb(181, 183, 181);
+    cursor: pointer;
+}
+
+.themeSelector .activeTheme {
+    width: 33px;
+    height: 33px;
+    transform: translateY(-5px);
+}
+
+.light {
+    background-color: white;
+    transition: all 500ms;
+}
+
+.dark {
+    background-color: black;
+    transition: all 500ms;
+}
+
+.sky {
+    background-color: rgb(31, 214, 255);
+    transition: all 500ms;
+}
+
+.gOne {
+    background: linear-gradient(60deg,rgb(3, 3, 3),rgb(255, 255, 255)); 
+    transition: all 500ms;
+}
+
+.gTwo {
+    background: linear-gradient(60deg,red,rgb(0, 242, 255)); 
+    transition: all 500ms;
+}
+
+@media (max-width:750px) {
+    .header{
+        display:grid ;
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .themeSelector{
+        justify-content: center;
+    }
+}

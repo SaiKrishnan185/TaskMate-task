@@ -1,0 +1,15 @@
+.App {
+    display: flex;
+    gap: 10vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: top;
+    padding: 3vh 10vw 3vh 10vw;
+    min-height: 100vh;
+    
+}
+
+button{
+    cursor: pointer;
+    color: white;
+}

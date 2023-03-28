@@ -1,0 +1,49 @@
+.AddTask{
+    min-height: 10vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    margin-right: 22vw;
+    margin-left: 22vw;
+    border: 1px solid rgba(218, 216, 216, 0.274);
+    
+}
+
+input{padding-left: 1vw;
+    height: 6vh;
+    width: 25vw;
+    border: 1px solid rgb(216, 214, 214);
+    margin: 1vh 0.2vw 1vh 0.2vw;
+    font-size: 1.15em;
+    border-radius: 10px;
+}
+
+button {
+    height: 6vh;
+    width: 5vw;
+    font-size: 1.15em;
+    text-align: center;
+    background-color: rgb(3, 203, 3);
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width:750px) {
+    .AddTask{
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+
+    input{
+        width: 70vw;
+    }
+
+    button {
+        height: 5vh;
+        width: 25vw;
+    }
+}
